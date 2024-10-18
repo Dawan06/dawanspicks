@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Library</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+    <div class="logo">Dawan's<span>Library</span></div>
+    <div class="header-controls">
+        <input type="text" id="search-bar" placeholder="Search for a movie..."> 
+        <select id="genre-filter">
+            <option value="All">All Genres</option>
+        </select>
+        <button id="random-btn" aria-label="Get a Random Movie">
+            <i class="fas fa-random"></i>
+        </button>
+        <button id="dark-mode-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Dawan's Movie Library</h1>
+            <button id="explore-btn">Explore</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="movies-container" class="movies-grid">
+            <!-- Movie Cards will be populated here -->
+        </section>
+        <div id="pagination" class="pagination">
+            <!-- Pagination buttons will be populated here -->
+        </div>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Close Modal">&times;</button>
+            <div id="random-movie">
+                <!-- Random movie details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
